@@ -4,26 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="title">Login Form</div>
-        <form action="#">
-            <div class="field">
-                <input type="text" required>
-                <label for="Email">Email Adress</label>
-            </div>
-            <div class="field">
-                <input type="password">
-                <label>Password</label>
-            </div>
-            <div class="pass-link"><a href="#">Forgot Password?</a></div>
-            <div class="field">
-                <input type="submit" value="Login">
-            </div>
-        </form>
-    </div>
+    <form method="post" action="" class="Form">
+        <h3 id="logo">Log In</h3>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Type in your username.." autocomplete="off" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password.." autocomplete="off" required />
+
+        <a class="forgot" href="#">Forgot Password?</a>
+        <a class="register" href="#">Register</a>
+
+        <input type="submit" name="submit" value="Log In" />
+    </form>
 </body>
 </html>
